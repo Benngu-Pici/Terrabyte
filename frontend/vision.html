@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Plant Assistant</title>
+    <link rel="stylesheet" href="assets/css/vision.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container">
+        <h1 class="logo">SmartGarden AI</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="vision.html" class="active">AI Assistant</a>
+            <a href="loyalty.html">Tầm nhìn</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h2>AI Plant Assistant 🌱</h2>
+        <p>
+            Trợ lý AI hỗ trợ chẩn đoán cây trồng, tư vấn tưới nước,
+            ánh sáng và phát hiện sớm dấu hiệu bệnh hại.
+        </p>
+    </div>
+</section>
+
+<!-- MAIN -->
+<section class="section light">
+    <div class="container assistant-layout">
+
+        <!-- LEFT INFO -->
+        <div class="assistant-info">
+            <h3>AI có thể làm gì?</h3>
+            <ul>
+                <li>📸 Phân tích hình ảnh cây trồng</li>
+                <li>💧 Tư vấn lượng nước phù hợp</li>
+                <li>🌈 Gợi ý ánh sáng theo giai đoạn</li>
+                <li>⚠️ Phát hiện dấu hiệu bất thường</li>
+            </ul>
+
+            <p class="note">
+                * AI học từ dữ liệu cây trồng và cảm biến môi trường.
+            </p>
+        </div>
+
+        <!-- CHAT AI -->
+        <div class="assistant-chat">
+            <div class="chat-box" id="chatBox">
+                <div class="chat ai">
+                    Xin chào 👋 Tôi là trợ lý AI cho vườn của bạn.
+                    Bạn có thể hỏi tôi về tình trạng cây hoặc gửi ảnh.
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="file" id="imageInput" accept="image/*">
+                <input type="text" id="userInput" placeholder="Hỏi AI về cây trồng...">
+                <button onclick="sendMessage()">Gửi</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    SmartGarden AI © 2025 – AI Assistant for Smart Agriculture
+</footer>
+
+<script src="assets/js/vision.js"></script>
+</body>
+</html>
